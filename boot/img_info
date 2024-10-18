@@ -1,0 +1,16 @@
+kernel=kernel
+ramdisk=ramdisk
+page_size=2048
+dt=dtb.img
+kernel_size=20221968
+ramdisk_size=8998622
+dtb_offset=0x01f00000
+dtb_size=86252
+base_addr=0x00000000
+kernel_offset=0x00008000
+ramdisk_offset=0x05400000
+tags_offset=0x00000100
+dtbo_offset=0x00000000
+cmd_line='console=ttyS1,115200n8 androidboot.selinux=permissive buildvariant=user'
+board=""
+format=gzip

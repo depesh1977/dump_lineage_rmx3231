@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel_config>
+  <channel_file name="qiyioemkey.ini" belong_package="com.qiyi.video" />
+  <channel_file name="lazadaChannel.txt" belong_package="com.lazada.android" />
+  <channel_file name="zalo_appchannel.in" belong_package="com.zing.zalo,com.zing.mp3,com.epi,com.vng.inputmethod.labankey" />
+  <channel_file name="dailyhunt_preburn_oppo.txt" belong_package="com.eterno" />
+  <channel_file name="iReader_preinstall.txt" belong_package="com.zhangyue.read" />
+  <channel_file name="OPPO_36577_browserconfiginfo" belong_package="com.UCMobile.intl" />
+  <channel_file name="kwai_lite_vn.appsflyer" belong_package="com.kwai.mercury" />
+  <channel_file name="jtexpress_oppo_preburn.ini" belong_package="com.msd.JTClient" />
+  <channel_file name="caih_channel.txt" belong_package="com.caiharbor.esim" />
+  <channel_file name="paytm_preburn_oppo.txt" belong_package="net.one97.paytm" />
+  <channel_file name="qdtraditional_preinstall.txt" belong_package="com.qidian.QDReader.traditional" />
+  <channel_file name="webnovel_appchannel.txt" belong_package="com.qidian.Int.reader" />
+  <channel_file name="shopChannel.txt" belong_package="com.shop.android" />
+  <channel_file name="darazChannel.txt" belong_package="com.daraz.android" />
+  <channel_file name="MobiSystems_AquaMail_OPPO.txt" belong_package="org.kman.AquaMail,com.mobisystems.office" />
+  <channel_file name="Newspoint_pre_install.appsflyer" belong_package="com.til.timesnews" />
+  <channel_file name="com.jakarta.baca.lite_appchannel.txt" belong_package="com.jakarta.baca.lite" />
+  <channel_file name="wps.txt" belong_package="cn.wps.moffice_eng" />
+  <channel_file name="pre_install_onmo.appsflyer" belong_package="com.onmo.ugames" />
+  <channel_file name="agoda_pre_install.txt" belong_package="com.agoda.mobile.consumer" />
+  <channel_file name="snap_appchannel.txt" belong_package="com.snapchat.android" />
+  <channel_file name="booking.data.aid" belong_package="com.booking" />
+  <channel_file name="spotify.preload" belong_package="com.spotify.music" />
+</channel_config>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+
+    <privapp-permissions package="com.facebook.system">
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.facebook.services">
+        <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST"/>
+    </privapp-permissions>
+
+    <allow-in-power-save package="com.facebook.services" />
+
+    <allow-in-power-save-except-idle package="com.facebook.appmanager"/>
+
+    <!--telcelGms -->
+    <privapp-permissions package="com.telcel.contenedor">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+    </privapp-permissions>
+
+    <!--Mi telcel-->
+    <privapp-permissions package="com.speedymovil.wire">
+        <permission name="android.permission.RECEIVE_SMS"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS"/>
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.CALL_PRIVILEGED"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+    </privapp-permissions>
+
+    <!--Start -->
+    <privapp-permissions package="com.celltick.lockscreen.go">
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.GET_ACCOUNTS" />
+        <permission name="android.permission.STOP_APP_SWITCHES" />
+    </privapp-permissions>
+
+    <!-- Co Claro, Add for Sysdll apk Permissions Whitelist -->
+    <privapp-permissions package="co.sitic.pp">
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.INTERNET"/>
+        <permission name="android.permission.ACCESS_WIFI_STATE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.REORDER_TASK"/>
+        <permission name="android.permission.CALL_PRIVILEGED"/>
+        <permission name="android.permission.EXPAND_STATUS_BAR"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.WAKE_LOCK"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.RECEIVE_SMS"/>
+        <permission name="android.permission.RECEIVE_EMERGENCY_BROADCAST"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.SYSTEM_ALERT_WINDOW"/>
+        <permission name="android.permission.WRITE_SETTINGS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+        <permission name="android.permission.INSTALL_SELF_UPDATES"/>
+   </privapp-permissions>
+
+   <!-- in jio, Add for Subsidy apk Permissions Whitelist -->
+   <privapp-permissions package="com.jio.myjio">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+   </privapp-permissions>
+
+   <privapp-permissions package="com.rjio.slc">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+   </privapp-permissions>
+</permissions>

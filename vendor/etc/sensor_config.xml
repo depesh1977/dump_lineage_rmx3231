@@ -1,0 +1,198 @@
+  <root>
+  <!--
+  SensorRole support list:
+      single_ir, single_macro
+      dualcam_master, dualcam_slave
+      multicam_superwide, multicam_wide,multicam_tele
+      stl3d_rgb, stl3d_ir_left, stl3d_ir_right
+
+  Rules:
+      1. SensorRole string is the back part of enum sensor_role
+         in cmr_common.h, convert to lowercase letters.
+      2. If no SensorRole, regard single as default.
+      3. Max SensorRole configured number of a sensor is 8,
+         SensorRole number beyond 8 will be ignored.
+      4. At the same facing, the same SensorRole only can exist
+         one for different sensors. If multiple, only the first one
+         is valid. For example, at Facing BACK, only support one
+         dualcam_master, the next dualcam_master will be ignored.
+         But you can define a dualcam_master at Facing FRONT at the
+         same time.
+      5. For the same sensor, the SensorRole of same type only can
+         exist one. (Generally the same type SensorRoles are mutually
+         exclusive.) If multiple, only the last one is valid. For
+         example, sensor ov32a1q has a SensorRole dualcam_master,
+         then has a SensorRole dualcam_slave, the final dualcam
+         SensorRole of ov32a1q is dualcam_slave. But you can define
+         a multicam_wide for ov32a1q at the same time.
+      6. SensorRoles should be added continuously after Resource_cost.
+         Please don't put them in other place.
+      7. SensorRoles can be added without order. For example, you can
+         input dualcam_master first, then input multicam_wide; also can
+         input multicam_wide first, then input dualcam_master.
+  -->
+  <!-->
+  sensor id 0
+  <-->
+      <CameraModuleCfg>
+        <SlotId>0</SlotId>
+        <SensorName>hi846</SensorName>
+        <Facing>BACK</Facing>
+        <Orientation>90</Orientation>
+        <Resource_cost>100</Resource_cost>
+        <ConflictingDevice>1</ConflictingDevice>
+        <OTP>
+            <E2prom>
+                <OtpName>hi846</OtpName>
+                <I2cAddr>0xa0</I2cAddr>
+                <E2promNum>3</E2promNum>
+                <E2promSize>1943</E2promSize>
+            </E2prom>
+        </OTP>
+        <VCM>
+            <AfName>cn3927e</AfName>
+            <Mode>2</Mode>
+        </VCM>
+        <TuningParameter>
+            <TuningName>hi846</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+
+      <CameraModuleCfg>
+        <SlotId>0</SlotId>
+        <SensorName>gc8034_ly</SensorName>
+        <Facing>BACK</Facing>
+        <Orientation>90</Orientation>
+        <Resource_cost>100</Resource_cost>
+        <ConflictingDevice>1</ConflictingDevice>
+        <OTP>
+            <E2prom>
+                <OtpName>gc8034</OtpName>
+                <I2cAddr>0xa0</I2cAddr>
+                <E2promNum>3</E2promNum>
+                <E2promSize>1941</E2promSize>
+            </E2prom>
+        </OTP>
+        <VCM>
+            <AfName>gt9772</AfName>
+            <Mode>2</Mode>
+        </VCM>
+        <TuningParameter>
+            <TuningName>gc8034</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+
+      <CameraModuleCfg>
+        <SlotId>0</SlotId>
+        <SensorName>gc08a3_ly</SensorName>
+        <Facing>BACK</Facing>
+        <Orientation>90</Orientation>
+        <Resource_cost>100</Resource_cost>
+        <ConflictingDevice>1</ConflictingDevice>
+        <OTP>
+            <E2prom>
+                <OtpName>gc08a3</OtpName>
+                <I2cAddr>0xa0</I2cAddr>
+                <E2promNum>3</E2promNum>
+                <E2promSize>1941</E2promSize>
+            </E2prom>
+        </OTP>
+        <VCM>
+            <AfName>gt9772</AfName>
+            <Mode>2</Mode>
+        </VCM>
+        <TuningParameter>
+            <TuningName>gc08a3</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+
+      <CameraModuleCfg>
+        <SlotId>0</SlotId>
+        <SensorName>hi846_txd</SensorName>
+        <Facing>BACK</Facing>
+        <Orientation>90</Orientation>
+        <Resource_cost>100</Resource_cost>
+        <ConflictingDevice>1</ConflictingDevice>
+        <OTP>
+            <E2prom>
+                <OtpName>hi846_txd</OtpName>
+                <I2cAddr>0xa0</I2cAddr>
+                <E2promNum>3</E2promNum>
+                <E2promSize>1943</E2promSize>
+            </E2prom>
+        </OTP>
+        <VCM>
+            <AfName>fp5510ee4</AfName>
+            <Mode>2</Mode>
+        </VCM>
+        <TuningParameter>
+            <TuningName>hi846_txd</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+  <!-->
+  sensor id 1
+  <-->
+      <CameraModuleCfg>
+        <SlotId>1</SlotId>
+        <SensorName>hi556</SensorName>
+        <Facing>FRONT</Facing>
+        <Orientation>270</Orientation>
+        <Resource_cost>100</Resource_cost>
+        <ConflictingDevice>0</ConflictingDevice>
+        <OTP>
+            <E2prom>
+                <OtpName>hi556</OtpName>
+                <I2cAddr>0x40</I2cAddr>
+                <E2promNum>3</E2promNum>
+                <E2promSize>5590</E2promSize>
+            </E2prom>
+        </OTP>
+        <TuningParameter>
+            <TuningName>hi556</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+
+      <CameraModuleCfg>
+        <SlotId>1</SlotId>
+        <SensorName>gc5035_ht</SensorName>
+        <Facing>FRONT</Facing>
+        <Orientation>270</Orientation>
+        <Resource_cost>100</Resource_cost>
+        <ConflictingDevice>0</ConflictingDevice>
+        <OTP>
+            <E2prom>
+                <OtpName>gc5035_ht</OtpName>
+                <I2cAddr>0x40</I2cAddr>
+                <E2promNum>3</E2promNum>
+                <E2promSize>8192</E2promSize>
+            </E2prom>
+        </OTP>
+        <TuningParameter>
+            <TuningName>gc5035</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+
+      <CameraModuleCfg>
+        <SlotId>1</SlotId>
+        <SensorName>hi556_txd</SensorName>
+        <Facing>FRONT</Facing>
+        <Orientation>270</Orientation>
+        <Resource_cost>100</Resource_cost>
+        <ConflictingDevice>0</ConflictingDevice>
+        <OTP>
+            <E2prom>
+                <OtpName>hi556_txd</OtpName>
+                <I2cAddr>0x50</I2cAddr>
+                <E2promNum>3</E2promNum>
+                <E2promSize>5585</E2promSize>
+            </E2prom>
+        </OTP>
+        <TuningParameter>
+            <TuningName>hi556_txd</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+  <!-->
+  sensor id 2
+  <-->
+
+  </root>

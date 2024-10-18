@@ -1,0 +1,9 @@
+ro.com.google.clientidbase.ms=android-oppo-rvo2
+ro.com.google.clientidbase.vs=android-oppo-rvo2
+ro.com.google.rlz_ap_whitelist=YF
+ro.com.google.rlzbrandcode=OPPO
+ro.product.system.name=RMX3231
+ro.product.name=RMX3231
+ro.system.build.fingerprint=realme/RMX3231/RMX3231:11/RP1A.201005.001/1663575547069:user/release-keys
+ro.build.fingerprint=realme/RMX3231/RMX3231:11/RP1A.201005.001/1663575547069:user/release-keys
+ro.build.version.base_os=realme/RMX3231/RMX3231:11/RP1A.201005.001/1657700640059:user/release-keys

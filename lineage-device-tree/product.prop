@@ -1,0 +1,16 @@
+# Miscellaneous
+dalvik.vm.systemservercompilerfilter=speed-profile
+persist.netmon.linger=10000
+persist.storage.type=2
+ro.carrier=oversea
+ro.com.google.gmsversion=11_202106.go
+ro.config.alarm_alert=delight.ogg
+ro.config.media_vol_default=10
+ro.config.notification_sound=notification_004.ogg
+ro.config.ringtone=ringtone_001.ogg,ringtone_001.ogg
+ro.opa.eligible_device=true
+ro.postinstall.fstab.prefix=/product
+ro.setupwizard.rotation_locked=true
+setupwizard.theme=glif_v3_light
+sys.internal.emulated=1
+

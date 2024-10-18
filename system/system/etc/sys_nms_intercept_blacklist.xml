@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <version>120200720</version>
+    <isOpen>1</isOpen>
+    <filter-name>sys_nms_intercept_blacklist</filter-name>
+    <!--内容不能被标题包含且该项为空时用null代替-->
+    <notification value="com.tencent.mm/微信游戏/null" />
+
+    <!-- 名单生效，navigation 必须配置，不配置默认采用通知服务内部名单 -->
+    <navigation>
+        <package>com.autonavi.minimap</package>
+        <package>com.baidu.BaiduMap</package>
+        <package>com.dreamer.notificationdemo</package>
+        <package>com.tencent.map</package>
+    </navigation>
+
+    <!--单个应用能创建的最大通道数，最小为100-->
+    <max-channels>1000</max-channels>
+
+    <openid_guid>
+	
+	 <guid_pkg>cn.oppo.demo.u1a1v0</guid_pkg>
+	 <guid_pkg>cn.oppo.demo.u0a0va</guid_pkg>
+	  <guid_pkg>cn.oppo.demo.u1a0va</guid_pkg>
+        <guid_pkg>com.nearme.romupdate</guid_pkg>
+        <guid_pkg>com.coloros.weather.service</guid_pkg>
+        <guid_pkg>com.coloros.findphone.client</guid_pkg>
+        <guid_pkg>com.coloros.findphone.client2</guid_pkg>
+        <guid_pkg>com.coloros.findmyphone</guid_pkg>
+        <guid_pkg>com.oppo.community</guid_pkg>
+        <guid_pkg>com.heytap.cloud</guid_pkg>
+        <guid_pkg>com.nearme.gamecenter</guid_pkg>
+        <guid_pkg>com.heytap.gamecenter</guid_pkg>
+        <guid_pkg>com.oppo.market</guid_pkg>
+       <guid_pkg>com.heytap.market</guid_pkg>
+        <guid_pkg>com.nearme.play</guid_pkg>
+        <guid_pkg>com.heytap.play</guid_pkg>
+        <guid_pkg>com.nearme.instant.platform</guid_pkg>
+        <guid_pkg>com.heytap.instant.platform</guid_pkg>
+        <guid_pkg>com.nearme.themestore</guid_pkg>
+        <guid_pkg>com.nearme.themespace</guid_pkg>
+        <guid_pkg>com.heytap.themestore</guid_pkg>
+        <guid_pkg>com.coloros.note</guid_pkg>
+        <guid_pkg>com.nearme.note</guid_pkg>
+        <guid_pkg>com.coloros.apprecover</guid_pkg>
+        <guid_pkg>com.oppo.otaui</guid_pkg>
+        <guid_pkg>com.coloros.screensavershelper</guid_pkg>
+        <guid_pkg>com.coloros.wallet</guid_pkg>
+        <guid_pkg>com.finshell.wallet</guid_pkg>
+        <guid_pkg>com.heytap.wallet</guid_pkg>
+        <guid_pkg>com.coloros.aftersalesservice</guid_pkg>
+        <guid_pkg>com.coloros.calendar</guid_pkg>
+        <guid_pkg>com.heytap.xgame</guid_pkg>
+        <guid_pkg>com.oppo.usercenter</guid_pkg>
+        <guid_pkg>com.heytap.usercenter</guid_pkg>
+        <guid_pkg>com.coloros.healthcheck</guid_pkg>
+        <guid_pkg>com.oppo.store</guid_pkg>
+        <guid_pkg>com.heytap.accessory</guid_pkg>
+        <guid_pkg>com.nearme.statistics.rom</guid_pkg>
+        <guid_pkg>com.oppo.engineermode</guid_pkg>
+        <guid_pkg>android</guid_pkg>
+    </openid_guid>
+
+    <openid_duid>
+        <duid_pkg>com.coloros.weather</duid_pkg>
+        <duid_pkg>com.coloros.flowmarket</duid_pkg>
+        <duid_pkg>com.nearme.gamecenter</duid_pkg>
+        <duid_pkg>com.heytap.gamecenter</duid_pkg>
+        <duid_pkg>com.oppo.community</duid_pkg>
+        <duid_pkg>com.android.calculator2</duid_pkg>
+        <duid_pkg>com.coloros.compass</duid_pkg>
+        <duid_pkg>com.nearme.note</duid_pkg>
+        <duid_pkg>com.oppo.engineermode</duid_pkg>
+        <duid_pkg>android</duid_pkg>
+    </openid_duid>
+
+    <openid_apid>
+        <apid_pkg>com.coloros.deeptesting</apid_pkg>
+        <apid_pkg>com.redteamobile.roaming</apid_pkg>
+        <apid_pkg>com.oppo.engineermode</apid_pkg>
+        <apid_pkg>android</apid_pkg>
+    </openid_apid>
+
+    <openid_udid>
+        <udid_pkg>com.dreamer.dreamerwork</udid_pkg>
+        <udid_pkg>com.nearme.romupdate</udid_pkg>
+        <udid_pkg>com.coloros.weather.service</udid_pkg>
+        <udid_pkg>com.coloros.findphone.client</udid_pkg>
+        <udid_pkg>com.coloros.findphone.client2</udid_pkg>
+        <udid_pkg>com.coloros.findmyphone</udid_pkg>
+        <udid_pkg>com.oppo.engineermode</udid_pkg>
+        <udid_pkg>android</udid_pkg>
+    </openid_udid>
+
+    <openid_vaid>
+        <vaid_pkg>com.coloros.weather</vaid_pkg>
+        <vaid_pkg>com.coloros.flowmarket</vaid_pkg>
+        <vaid_pkg>com.nearme.gamecenter</vaid_pkg>
+        <vaid_pkg>com.oppo.community</vaid_pkg>
+        <vaid_pkg>com.android.calculator2</vaid_pkg>
+        <vaid_pkg>com.coloros.compass</vaid_pkg>
+        <vaid_pkg>com.nearme.note</vaid_pkg>
+        <vaid_pkg>com.oppo.engineermode</vaid_pkg>
+        <vaid_pkg>android</vaid_pkg>
+    </openid_vaid>
+
+    <force_group>
+        <force_group_pkg>com.kaola</force_group_pkg>
+        <force_group_pkg>com.netease.newsreader.activity</force_group_pkg>
+        <force_group_pkg>com.tencent.news</force_group_pkg>
+    </force_group>
+
+    <super_power_group>
+        <super_power_group_pkg>com.android.calendar</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.calendar</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.note</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.alarmclock</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.favorite</super_power_group_pkg>
+        <super_power_group_pkg>com.android.bluetooth</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.oshare</super_power_group_pkg>
+        <super_power_group_pkg>com.android.mms</super_power_group_pkg>
+        <super_power_group_pkg>com.android.contacts</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.securitypermission</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.oppoguardelf</super_power_group_pkg>
+        <super_power_group_pkg>com.android.incallui</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.blacklistapp</super_power_group_pkg>
+        <super_power_group_pkg>com.oppo.sos</super_power_group_pkg>
+        <super_power_group_pkg>com.android.phone</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.providers.downloads.ui</super_power_group_pkg>
+        <super_power_group_pkg>com.oppo.ota</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.safecenter</super_power_group_pkg>
+        <super_power_group_pkg>com.coloros.securepay</super_power_group_pkg>
+        <super_power_group_pkg>com.android.systemui</super_power_group_pkg>
+        <super_power_group_pkg>com.google.android.dialer</super_power_group_pkg>
+        <super_power_group_pkg>com.google.android.calendar</super_power_group_pkg>
+        <super_power_group_pkg>com.google.android.apps.messaging</super_power_group_pkg>
+        <super_power_group_pkg>com.google.android.keep</super_power_group_pkg>
+    </super_power_group>
+</filter-conf>

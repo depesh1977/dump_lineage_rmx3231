@@ -1,0 +1,57 @@
+<!--
+    Input:
+        manifest_singlesim.xml
+-->
+<manifest version="2.0" type="device">
+    <hal format="hidl" override="true">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>1.5</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>slot1</instance>
+        </interface>
+        <fqname>@1.2::ISap/slot1</fqname>
+        <fqname>@1.5::IRadio/slot1</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>android.hardware.radio.config</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IRadioConfig</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.1::IRadioConfig/default</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISecureElement</name>
+            <instance>SIM1</instance>
+        </interface>
+        <fqname>@1.0::ISecureElement/SIM1</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>vendor.sprd.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IExtRadio</name>
+            <instance>slot1</instance>
+        </interface>
+        <fqname>@1.0::IExtRadio/slot1</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>vendor.sprd.hardware.radio.ims</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IImsRadio</name>
+            <instance>slot1</instance>
+        </interface>
+        <fqname>@1.0::IImsRadio/slot1</fqname>
+    </hal>
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    There are the samples for customer to add the VOWIFI configuration item: user agent.
+    <operator spn="CHT TW" mcc="466" mnc="{092,011}" userAgent="VOWIFI UA" />
+    <operator spn="Telstra AUS" mcc="505" mnc="{001,071,072}"
+        userAgent="Telstra @prop#ro.product.brand:unknown#@" />
+
+    Note:
+    spn Used to mark the operator's name
+    mcc The length must be 3
+    mnc The length must be 3, and if there is more than one mnc, please seperate by ','
+    userAgent The UA will be used with VOWIFI sip, and it support generate from prop.
+              The prop in UA should be defined as this: @prop#<prop_key>:<def_value>#@
+              If there isn't default value for the prop, defined as this: @prop#<prop_key>#@
+ -->
+
+<AccountSettings>
+    <operator spn="Vodafone INT" mcc="404" mnc="{004,011}"
+            retryCodeList="40[1|5-8],41[0|3-6],42[0|1|3],48[0-5],48[7][8|9],49[1|3|4],50[0-5],513,60[4|6]"/>
+</AccountSettings>

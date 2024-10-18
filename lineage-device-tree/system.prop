@@ -1,0 +1,22 @@
+# Wi-Fi
+ro.wifi.channels=
+
+# Miscellaneous
+dalvik.vm.heapgrowthlimit=128m
+dalvik.vm.heapsize=256m
+net.bt.name=Android
+persist.sys.glance.lockscreen=1
+pm.dexopt.downgrade_after_inactive_days=10
+pm.dexopt.shared=quicken
+ro.build.device_family=OPSC9863A
+ro.build.keystore.path=/storage/emulated/0/Download/.lii/
+ro.build.version.ota=RMX3231RU_22.A.77_202209240351
+ro.com.google.clientidbase=android-oppo
+ro.lmk.critical_upgrade=true
+ro.lmk.downgrade_pressure=60
+ro.lmk.kill_heaviest_task=false
+ro.lmk.upgrade_pressure=40
+ro.product.cpu.abi2=armeabi
+ro.statsd.enable=true
+ro.vm.socket.disable=true
+
